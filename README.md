@@ -66,3 +66,9 @@ And more...
 
 ---------------
 
+**HDRI 2 CubeMap**: a convertor tool from Matheowis
+
+               https://matheowis.github.io/HDRI-to-CubeMap/
+
+---------------
+
