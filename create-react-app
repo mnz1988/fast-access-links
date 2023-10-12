@@ -1,3 +1,48 @@
-terminal > npx create-react-app .    // "." means current flder
+from scrach>>>
+
+terminal > npx create-react-app .    // "." means current folder
 asked to install a dependency> type y
 wait then terminal> npm run start
+Wait for a little, ready-to-use React. terminal > npm run start
+or 
+npm install react react-dom react-scripts / then / npm run start
+Add the two following scripts in the "scripts" property in package.json 
+    ``{
+      // ...
+      "scripts": {
+      "dev": "react-scripts start",
+      "build": "react-scripts build"
+    },
+    // ...
+    }``
+In /public/, create an index.html file
+If you are using VSCode, write ( ! )(or html:5) and then press TAB to create a basic HTML page
+Change <title> to XX
+in the <body> create: <div id="root"></div>
+Create a /src/ folder & create an index.js file inside that
+In this file > import { createRoot } from 'react-dom/client' > const root = createRoot(document.querySelector('#root')) > root.render( > <h1>Hello React</h1> > )
+In the terminal (in the folder) > npm run dev
+
+using vite >>>
+
+npm create vite@latest
+Then, choose a Project name > then platform (react) >  choose a variant (Javascript) > Open the newly created folder in your terminal > npm install > npm run dev
+
+
+chakra-ui installation>>>
+
+terminal > npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+After installing Chakra UI, you need to set up the ChakraProvider at the root of your application
+Go to the src directory and inside main.jsx or main.tsx, wrap ChakraProvider around App:
+    import * as React from 'react'
+    import { ChakraProvider } from '@chakra-ui/react'
+    import * as ReactDOM from 'react-dom/client'
+
+    const rootElement = document.getElementById('root')
+    ReactDOM.createRoot(rootElement).render(
+      <React.StrictMode>
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
+      </React.StrictMode>,
+    )
