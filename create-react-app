@@ -46,3 +46,17 @@ Go to the src directory and inside main.jsx or main.tsx, wrap ChakraProvider aro
       </ChakraProvider>
       </React.StrictMode>,
     )
+
+lottie animation installation>>>
+
+npm i lottie-react
+> new file >
+import Lottie from 'lottie-react'
+import LottieAnimation from './logomotion.json'
+//
+const LogoMotion = () => <Lottie className="bgAnimation" animationData={lottieAnimation} loop={true}/>
+//
+export default LogoMotion
+> create css file for animation > import animation on your main page
+
+
