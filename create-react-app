@@ -1,0 +1,3 @@
+terminal > npx create-react-app .    // "." means current flder
+asked to install a dependency> type y
+wait then terminal> npm run start
