@@ -63,6 +63,7 @@ Go to "src" directory and inside "main.jsx" or "main.tsx" wrap ChakraProvider ar
       </ChakraProvider>
       </React.StrictMode>,
     )
+
 **************
     #lottie animation installation>>>
 
