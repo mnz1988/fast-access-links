@@ -105,3 +105,21 @@ export default function People()
     }
 **************
 
+installing Vercel>>>>>>
+
+npm install vercel
+In package.json, in the "scripts" property
+        {
+          "scripts": {
+            // ...
+            "deploy": "vercel --prod"
+          },
+        }
+
+If you use the "vercel" command without —-prod, the code will be published on a preview URL so that you can test it before going to production. 
+From now on, if you want to deploy your project online, you can simply run "npm run deploy" in the terminal.
+
+then follow vercel instructions
+
+**************
+
