@@ -50,11 +50,10 @@ then follow vercel instructions
     #chakra-ui installation>>>
 
 terminal > npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
-After installing Chakra UI, you need to set up the ChakraProvider at the root of your application
-Go to the src directory and inside main.jsx or main.tsx, wrap ChakraProvider around App:
-    import * as React from 'react'
+After installing, set up the ChakraProvider at the root:
+Go to "src" directory and inside "main.jsx" or "main.tsx" wrap ChakraProvider around App>
+
     import { ChakraProvider } from '@chakra-ui/react'
-    import * as ReactDOM from 'react-dom/client'
 
     const rootElement = document.getElementById('root')
     ReactDOM.createRoot(rootElement).render(
