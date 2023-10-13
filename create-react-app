@@ -1,4 +1,4 @@
-from scratch>>>
+#from scratch>>>
 
 terminal > npx create-react-app .    // "." means current folder
 asked to install a dependency> type y
@@ -23,13 +23,31 @@ Create a /src/ folder & create an index.js file inside that
 In this file > import { createRoot } from 'react-dom/client' > const root = createRoot(document.querySelector('#root')) > root.render( > <h1>Hello React</h1> > )
 In the terminal (in the folder) > npm run dev
 **************
-using vite >>>
+#using vite >>>
 
 npm create vite@latest
 Then, choose a Project name > then platform (react) >  choose a variant (Javascript) > Open the newly created folder in your terminal > npm install > npm run dev
 **************
 
-chakra-ui installation>>>
+    #installing Vercel>>>>>>
+
+npm install vercel
+In package.json, in the "scripts" property
+        {
+          "scripts": {
+            // ...
+            "deploy": "vercel --prod"
+          },
+        }
+
+If you use the "vercel" command without —-prod, the code will be published on a preview URL so that you can test it before going to production. 
+From now on, if you want to deploy your project online, you can simply run "npm run deploy" in the terminal.
+
+then follow vercel instructions
+
+**************
+
+    #chakra-ui installation>>>
 
 terminal > npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 After installing Chakra UI, you need to set up the ChakraProvider at the root of your application
@@ -47,7 +65,7 @@ Go to the src directory and inside main.jsx or main.tsx, wrap ChakraProvider aro
       </React.StrictMode>,
     )
 **************
-lottie animation installation>>>
+    #lottie animation installation>>>
 
 npm i lottie-react
 > new file >
@@ -103,23 +121,5 @@ export default function People()
         </ul>
     </div>
     }
-**************
-
-installing Vercel>>>>>>
-
-npm install vercel
-In package.json, in the "scripts" property
-        {
-          "scripts": {
-            // ...
-            "deploy": "vercel --prod"
-          },
-        }
-
-If you use the "vercel" command without —-prod, the code will be published on a preview URL so that you can test it before going to production. 
-From now on, if you want to deploy your project online, you can simply run "npm run deploy" in the terminal.
-
-then follow vercel instructions
-
 **************
 
